@@ -1,7 +1,7 @@
 # lspp - ls plus plus
 A minimal alternative to coreutils' "ls" 
 
-### installation
+## Installation
 lspp uses [nerd fonts](), so go ahead and install that first
 
 after installing nerd fonts, clone this repository:
@@ -17,9 +17,9 @@ and finally run the install script as root:
 sudo make install
 ```
 
-### usage
+## Usage
 run `lspp -h` to list the usage and the options. 
 
-### screenshots
+## Screenshots
 ![](assets/showcase1.png)
 ![](assets/showcase2.png)
