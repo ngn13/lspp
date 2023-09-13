@@ -1,5 +1,5 @@
 # lspp - ls plus plus
-A minimal alternative to coreutils's "ls" 
+A minimal alternative to coreutils' "ls" 
 
 ### installation
 lspp uses [nerd fonts](), so go ahead and install that first
