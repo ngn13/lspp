@@ -1,8 +1,14 @@
 # lspp | ls plus plus
 a minimal alternative to coreutils' `ls` command
 
+<details>
+  <summary><h3>Screenshots</h3></summary>
+  <img src="assets/showcase1.png">
+  <img src="assets/showcase2.png">
+</details>
+
 ### Installation
-lspp uses [nerd fonts](), so go ahead and install that first
+lspp uses [nerd fonts](https://www.nerdfonts.com), so go ahead and install that first
 after installing nerd fonts, clone this repository:
 ```bash
 git clone https://github.com/ngn13/lspp.git
@@ -17,17 +23,12 @@ make install
 ```
 
 ### Usage
-run `lspp -h` to list the usage and the options.
-adding an alias to your `~/.bash` or `~/.zshrc` (or whatever shell you are using)
+run `lspp -h` to list the usage and the options, adding an alias to your `~/.bash` or `~/.zshrc` (or whatever shell you are using)
 file would make `lspp` easier to use:
 ```bash 
 alias l="lspp -l"
 alias ll="lspp -a"
 ```
-
-### Screenshots
-![](assets/showcase1.png)
-![](assets/showcase2.png)
 
 ### Contribute 
 you can easily contribute by adding new icons, see the [`icons.c`](src/icons.c) file,
