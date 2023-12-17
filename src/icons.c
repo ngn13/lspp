@@ -78,6 +78,12 @@ struct IconMap namemap[] = {
 };
 
 char* find_icon(char* e, struct stat s) {
+  for(int i = 0; i < sizeof(namemap)/sizeof(struct IconMap); i++) {
+    if(eq(e, namemap[i].name)) {
+      return namemap[i].icon;
+    }
+  }
+  
   for(int i = 0; i < sizeof(extmap)/sizeof(struct IconMap); i++) {
     if(eq(e, ".") || eq(e, "..")){
       return "";
@@ -85,12 +91,6 @@ char* find_icon(char* e, struct stat s) {
 
     if(extmap[i].name[0] == '.' && ends(e, extmap[i].name)) {
       return extmap[i].icon;
-    }
-  }
-
-  for(int i = 0; i < sizeof(namemap)/sizeof(struct IconMap); i++) {
-    if(eq(e, namemap[i].name)) {
-      return namemap[i].icon;
     }
   }
 
