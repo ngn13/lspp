@@ -36,7 +36,7 @@ bool exists(char* path){
     closedir(dir);
     return true;
   }else if(errno == ENOTDIR){
-    if (access(path, O_RDWR)!=0) {
+    if (access(path, F_OK)!=0) {
       return false;
     }
     return true;
